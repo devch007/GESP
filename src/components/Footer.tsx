@@ -71,10 +71,6 @@ export default function Footer() {
         {/* Bottom Rights */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-[11px] font-mono text-[#E9E9E9]/60">
           <div>© {new Date().getFullYear()} GESP — Global Education &amp; Sports Partners LLC. All Rights Reserved.</div>
-          <div className="flex gap-6">
-            <a href="https://www.instagram.com/gesp.team/" target="_blank" rel="noopener noreferrer" className="hover:text-[#FAB900] transition-colors">Instagram: @gesp.team</a>
-            <span>Family Confidentiality</span>
-          </div>
         </div>
 
       </div>
