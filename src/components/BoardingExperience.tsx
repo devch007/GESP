@@ -121,12 +121,6 @@ export default function BoardingExperience() {
           ))}
         </div>
 
-        {/* Caption Bar */}
-        <div className="mt-12 pt-6 border-t border-[#E8E4DA] flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs font-mono text-[#858076]">
-          <span>CAMPUS • DORMS • CLASSROOMS • DINING • ATHLETICS • COMMUNITY</span>
-          <span>NEW ENGLAND & U.S. PREPARATORY INSTITUTIONS</span>
-        </div>
-
       </div>
     </section>
   );
