@@ -68,10 +68,10 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
         } ${scrolled ? "pt-3.5" : "pt-5"}`}
       >
         <div
-          className={`max-w-7xl mx-auto transition-all duration-500 rounded-2xl px-5 sm:px-7 py-3 flex items-center justify-between ${
+          className={`max-w-7xl mx-auto transition-all duration-500 rounded-2xl px-5 sm:px-7 py-3 flex items-center justify-between bg-white/95 backdrop-blur-xl border border-[#E6E2D8] ${
             scrolled
-              ? "bg-[#FAF9F6]/95 backdrop-blur-xl border border-[#E6E2D8] shadow-[0_8px_30px_rgb(0,0,0,0.08)]"
-              : "bg-[#041235]/40 backdrop-blur-md border border-white/15 shadow-[0_8px_32px_rgba(0,0,0,0.3)]"
+              ? "shadow-[0_10px_30px_rgb(0,0,0,0.10)]"
+              : "shadow-[0_12px_40px_rgba(0,0,0,0.22)]"
           }`}
         >
           {/* Brand Logo */}
@@ -80,9 +80,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
               <img
                 src="https://gespeducation.com/wp-content/uploads/2025/09/Logo_GESP_Education.png"
                 alt="GESP Education"
-                className={`h-8 sm:h-9 w-auto object-contain transition-all duration-300 ${
-                  !scrolled ? "brightness-110 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]" : ""
-                }`}
+                className="h-8 sm:h-9 w-auto object-contain"
               />
             </a>
           </div>
@@ -96,13 +94,9 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
                   key={link.label}
                   href={link.href}
                   className={`relative px-4 py-2 text-xs font-medium tracking-wide rounded-xl transition-all duration-300 ${
-                    scrolled
-                      ? isActive
-                        ? "text-[#0D2153] font-bold bg-[#0D2153]/5"
-                        : "text-[#4A4D55] hover:text-[#0D2153] hover:bg-black/5"
-                      : isActive
-                      ? "text-white font-bold bg-white/15"
-                      : "text-white/80 hover:text-white hover:bg-white/10"
+                    isActive
+                      ? "text-[#0D2153] font-bold bg-[#0D2153]/5"
+                      : "text-[#333333] hover:text-[#0D2153] hover:bg-black/5"
                   }`}
                 >
                   <span>{link.label}</span>
@@ -125,11 +119,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
               href="https://wa.me/919810000000?text=Hi%20GESP%20team,%20I%20would%20like%20to%20learn%20more%20about%20U.S.%20boarding%20schools%20for%20my%20child."
               target="_blank"
               rel="noopener noreferrer"
-              className={`p-2 sm:px-3 sm:py-2 rounded-xl text-xs font-semibold tracking-wider transition-all flex items-center gap-1.5 border cursor-pointer ${
-                scrolled
-                  ? "border-[#25D366]/30 text-[#128C7E] bg-[#25D366]/5 hover:bg-[#25D366]/15 hover:border-[#25D366]"
-                  : "border-[#25D366]/50 text-white bg-[#25D366]/20 hover:bg-[#25D366]/30 hover:border-[#25D366]"
-              }`}
+              className="p-2 sm:px-3 sm:py-2 rounded-xl text-xs font-semibold tracking-wider transition-all flex items-center gap-1.5 border border-[#25D366]/35 text-[#128C7E] bg-[#25D366]/8 hover:bg-[#25D366]/18 hover:border-[#25D366] cursor-pointer shadow-xs"
               title="Chat with an advisor on WhatsApp"
             >
               <MessageCircle className="w-4 h-4 text-[#25D366]" />
@@ -139,24 +129,16 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             {/* Primary Consultation Action */}
             <button
               onClick={onOpenConsultation}
-              className={`px-4 sm:px-5 py-2 sm:py-2.5 text-xs font-bold tracking-wider uppercase transition-all duration-300 flex items-center gap-1.5 cursor-pointer rounded-xl shadow-md hover:shadow-lg active:scale-[0.98] ${
-                scrolled
-                  ? "bg-[#0D2153] hover:bg-[#041235] text-white hover:ring-2 hover:ring-[#0D2153]/20"
-                  : "bg-[#FAB900] hover:bg-[#E4B603] text-[#041235] hover:ring-2 hover:ring-[#FAB900]/40"
-              }`}
+              className="px-4 sm:px-5 py-2 sm:py-2.5 bg-[#0D2153] hover:bg-[#041235] text-white text-xs font-bold tracking-wider uppercase transition-all duration-300 flex items-center gap-1.5 cursor-pointer rounded-xl shadow-md hover:shadow-lg active:scale-[0.98] hover:ring-2 hover:ring-[#0D2153]/20"
             >
               <span>Talk With GESP</span>
-              <ArrowRight className={`w-3.5 h-3.5 transition-transform group-hover:translate-x-1 ${scrolled ? "text-[#FAB900]" : "text-[#041235]"}`} />
+              <ArrowRight className="w-3.5 h-3.5 text-[#FAB900] transition-transform group-hover:translate-x-1" />
             </button>
 
             {/* Mobile Hamburger Toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`lg:hidden p-2 rounded-xl border transition-colors ${
-                scrolled
-                  ? "text-[#111111] border-[#E6E2D8] hover:bg-black/5"
-                  : "text-white border-white/20 hover:bg-white/10"
-              }`}
+              className="lg:hidden p-2 rounded-xl border border-[#E6E2D8] text-[#111111] hover:bg-black/5 transition-colors"
               aria-label="Toggle Navigation"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
