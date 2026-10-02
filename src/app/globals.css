@@ -77,9 +77,9 @@
   background: transparent !important;
 }
 
-/* Editorial Italic with Relaxed Wavy / Zigzag Underline & Yellow Accent Text */
+/* Editorial Italic with Relaxed Wavy / Zigzag Underline & Yellow Accent Text (Light Weight) */
 .highlight-italic {
-  font-weight: 700 !important;
+  font-weight: 300 !important;
   font-style: italic !important;
   color: #E4B603 !important;
   position: relative;
@@ -100,7 +100,7 @@
 }
 
 .highlight-italic-gold {
-  font-weight: 700 !important;
+  font-weight: 300 !important;
   font-style: italic !important;
   color: #FAB900 !important;
   position: relative;
