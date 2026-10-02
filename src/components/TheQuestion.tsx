@@ -73,13 +73,6 @@ export default function TheQuestion() {
         
         {/* Top Header */}
         <div className="max-w-3xl mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0D2153]/5 border border-[#0D2153]/10 mb-4">
-            <Sparkles className="w-3.5 h-3.5 text-[#FAB900]" />
-            <span className="text-[11px] font-mono tracking-widest uppercase text-[#0D2153] font-bold">
-              WHY THIS DECISION IS DIFFERENT
-            </span>
-          </div>
-
           <h2 className="font-heading text-3xl sm:text-5xl lg:text-[52px] font-normal text-[#111111] leading-[1.08] tracking-tight">
             Finding the right school starts with <br className="hidden sm:inline" />
             understanding the <span className="highlight-italic">student.</span>

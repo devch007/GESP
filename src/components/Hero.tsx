@@ -38,19 +38,6 @@ export default function Hero({ onOpenConsultation, onExploreExperience }: HeroPr
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full my-auto py-10">
         <div className="max-w-3xl">
           
-          {/* Eyebrow Label */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="mb-6 inline-flex items-center gap-2"
-          >
-            <span className="text-[11px] font-mono tracking-[0.25em] uppercase text-[#FAB900] font-bold">
-              U.S. BOARDING SCHOOL PLACEMENT &amp; GUIDANCE • INDIA
-            </span>
-            <span className="w-8 h-[2px] bg-[#FAB900]" />
-          </motion.div>
-
           {/* Headline Appearing Line by Line */}
           <div className="overflow-hidden mb-6">
             <motion.h1

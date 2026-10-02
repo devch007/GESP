@@ -23,10 +23,6 @@ export default function FinalCTA({ onOpenConsultation }: FinalCTAProps) {
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-12 text-center">
         
-        <span className="text-[11px] font-mono tracking-[0.25em] uppercase text-[#FAB900] font-bold block mb-4">
-          GLOBAL EDUCATION &amp; SPORTS PARTNERS • INDIA
-        </span>
-
         <h2 className="font-heading text-4xl sm:text-6xl lg:text-7xl font-normal leading-[1.08] tracking-tight mb-6">
           It&apos;s your moment. <br className="hidden sm:inline" />
           <span className="highlight-italic-gold">Now or never.</span>

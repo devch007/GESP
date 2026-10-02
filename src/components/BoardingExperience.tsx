@@ -21,9 +21,6 @@ export default function BoardingExperience() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div className="max-w-2xl">
-            <span className="subline-tag block mb-3">
-              EXPERIENCE THE SCHOOLS
-            </span>
             <h2 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-normal text-[#333333] leading-tight">
               Imagine their school being a <span className="highlight-italic">community.</span>
             </h2>

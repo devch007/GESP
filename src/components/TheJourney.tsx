@@ -382,9 +382,6 @@ export default function TheJourney({
             {/* Top Row: Step 01 & Step 03 */}
             <div className="flex h-1/2 w-full items-center justify-start gap-[1vw]">
               <div className="h-full w-[22%] pt-[1vw] max-[768px]:h-fit max-[768px]:pt-[3vw]">
-                <span className="subline-tag block mb-2">
-                  HOW GESP GUIDES YOU
-                </span>
                 <h2 className="font-heading text-[2.4vw] leading-[1.05] max-[768px]:text-[6.5vw] text-[#333333] font-normal">
                   GESP <span className="highlight-italic">Process</span>
                 </h2>

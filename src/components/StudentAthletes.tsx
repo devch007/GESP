@@ -18,9 +18,6 @@ export default function StudentAthletes({ onOpenConsultation }: StudentAthletesP
         
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <span className="subline-tag block mb-3">
-            STUDENT × ACADEMICS × ATHLETICS
-          </span>
           <h2 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-normal text-[#333333] leading-tight">
             Where sport becomes part of the <span className="highlight-italic">education.</span>
           </h2>

@@ -62,9 +62,6 @@ export default function WhyGespIndia() {
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
           <div className="max-w-2xl">
-            <span className="subline-tag block mb-3">
-              GESP DIFFERENCE
-            </span>
             <h2 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-normal text-[#1A1A1A] leading-[1.08] tracking-tight">
               We propose, they <span className="highlight-italic">choose.</span>
             </h2>
@@ -132,10 +129,6 @@ export default function WhyGespIndia() {
                     </div>
                   </div>
 
-                  {/* Title & Category */}
-                  <span className="text-[10px] font-mono tracking-widest uppercase text-[#FAB900] font-bold block mb-1">
-                    {pillar.summary}
-                  </span>
                   <h3 className="font-heading text-2xl font-normal text-[#1A1A1A] mb-4 group-hover:text-[#0D2153] transition-colors">
                     {pillar.title}
                   </h3>
