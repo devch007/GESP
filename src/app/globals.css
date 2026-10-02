@@ -77,9 +77,10 @@
   background: transparent !important;
 }
 
-/* Editorial Italic with Relaxed Wavy / Zigzag Underline */
+/* Editorial Italic with Relaxed Wavy / Zigzag Underline & Yellow Accent Text */
 .highlight-italic {
   font-style: italic;
+  color: #E4B603;
   position: relative;
   display: inline-block;
 }
@@ -99,6 +100,7 @@
 
 .highlight-italic-gold {
   font-style: italic;
+  color: #FAB900;
   position: relative;
   display: inline-block;
 }
