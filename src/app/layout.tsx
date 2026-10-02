@@ -1,18 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Inter_Tight, Inter } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const interTight = Inter_Tight({
-  variable: "--font-heading",
+const geistSans = Geist({
+  variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
-const inter = Inter({
-  variable: "--font-sans",
+const geistMono = Geist_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
@@ -52,7 +50,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${interTight.variable} ${inter.variable} scroll-smooth`}
+      className={`${geistSans.variable} ${geistMono.variable} font-sans scroll-smooth`}
     >
       <body className="bg-[#FAFAFC] text-[#111111] font-sans antialiased selection:bg-[#0D2153] selection:text-[#FAB900] min-h-screen flex flex-col overflow-x-hidden">
         {children}

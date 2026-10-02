@@ -36,8 +36,9 @@
 }
 
 @theme {
-  --font-heading: var(--font-heading), -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  --font-heading: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-sans: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 /* Recreated DirectScal Gradient from 21st.dev (Pulse Bars adapted for GESP Brand Palette) */
