@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import TheQuestion from "@/components/TheQuestion";
 import WhyGespIndia from "@/components/WhyGespIndia";
 import BoardingExperience from "@/components/BoardingExperience";
+import RealCampusVisits from "@/components/RealCampusVisits";
 import StudentAthletes from "@/components/StudentAthletes";
 import TheJourney from "@/components/TheJourney";
 import FinalCTA from "@/components/FinalCTA";
@@ -49,6 +50,9 @@ export default function Home() {
 
       {/* 05 — EXPERIENCE THE SCHOOLS */}
       <BoardingExperience />
+
+      {/* ON-THE-GROUND VISITS (AUTHENTIC TEAM PHOTOGRAPHY) */}
+      <RealCampusVisits onOpenConsultation={handleOpenModal} />
 
       {/* 06 — STUDENT × ACADEMICS × ATHLETICS */}
       <StudentAthletes onOpenConsultation={handleOpenModal} />
