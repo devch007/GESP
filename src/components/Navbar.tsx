@@ -74,7 +74,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
               : "bg-[#041235]/40 backdrop-blur-md border border-white/15 shadow-[0_8px_32px_rgba(0,0,0,0.3)]"
           }`}
         >
-          {/* Brand Logo & India Presence Indicator */}
+          {/* Brand Logo */}
           <div className="flex items-center gap-3.5">
             <a href="#" className="flex items-center group transition-transform duration-300 hover:scale-[1.02]">
               <img
@@ -85,18 +85,6 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
                 }`}
               />
             </a>
-
-            {/* Region Pill */}
-            <div
-              className={`hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-mono font-semibold uppercase tracking-wider transition-colors border ${
-                scrolled
-                  ? "bg-[#0D2153]/5 text-[#0D2153] border-[#0D2153]/15"
-                  : "bg-white/10 text-white/90 border-white/20"
-              }`}
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              <span>India Advisory</span>
-            </div>
           </div>
 
           {/* Desktop Navigation Links with Pill Hover Effect */}
@@ -189,14 +177,10 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             className="fixed inset-0 z-40 bg-[#FAF9F6] pt-24 px-6 pb-8 flex flex-col justify-between lg:hidden border-b border-[#E8E4DA] overflow-y-auto"
           >
             <div className="space-y-6">
-              <div className="flex items-center justify-between pb-3 border-b border-[#E8E4DA]">
+              <div className="pb-3 border-b border-[#E8E4DA]">
                 <span className="text-[11px] font-mono uppercase tracking-widest text-[#858076] font-semibold">
-                  Exploration Menu
+                  Navigation
                 </span>
-                <div className="inline-flex items-center gap-1.5 text-xs text-[#0D2153] font-mono">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <span>Advisors Online</span>
-                </div>
               </div>
 
               <div className="space-y-2">
