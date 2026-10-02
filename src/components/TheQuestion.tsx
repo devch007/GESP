@@ -72,13 +72,13 @@ export default function TheQuestion() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         
         {/* Top Header */}
-        <div className="max-w-3xl mb-14">
-          <h2 className="font-heading text-3xl sm:text-5xl lg:text-[52px] font-normal text-[#111111] leading-[1.08] tracking-tight">
+        <div className="max-w-3xl mb-12">
+          <h2 className="text-3xl sm:text-5xl lg:text-[48px] font-semibold text-[#111111] leading-[1.12] tracking-tight mb-4">
             Finding the right school starts with <br className="hidden sm:inline" />
             understanding the <span className="highlight-italic">student.</span>
           </h2>
 
-          <p className="text-base sm:text-lg text-[#5A5751] font-light mt-5 leading-relaxed">
+          <p className="text-base sm:text-lg text-[#5A5E66] font-normal leading-relaxed">
             Every child is different. The right school is the one where they feel happy, supported, and excited to learn every day.
           </p>
         </div>

@@ -146,10 +146,34 @@
   color: #0D2153;
 }
 
-/* Base typography */
-h1, h2, h3, h4, .font-heading {
+/* Base typography hierarchy */
+h1, .font-heading-hero {
+  font-family: var(--font-heading);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+h2, .font-heading {
   font-family: var(--font-heading);
   letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+h3 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+h4 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.015em;
+  line-height: 1.35;
+}
+
+p {
+  letter-spacing: -0.01em;
 }
 
 /* Minimalist scrollbars */

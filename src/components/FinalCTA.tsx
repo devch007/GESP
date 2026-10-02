@@ -59,12 +59,12 @@ export default function FinalCTA({ onOpenConsultation }: FinalCTAProps) {
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-12 text-center">
         
         {/* Main Title */}
-        <h2 className="font-heading text-4xl sm:text-6xl lg:text-7xl font-normal leading-[1.08] tracking-tight mb-6">
+        <h2 className="text-4xl sm:text-6xl lg:text-[64px] font-semibold leading-[1.1] tracking-tight mb-6">
           It&apos;s your moment. <br className="hidden sm:inline" />
           <span className="highlight-italic-gold">Now or never.</span>
         </h2>
 
-        <p className="text-base sm:text-lg lg:text-xl text-[#EBE3D4] font-light max-w-2xl mx-auto leading-relaxed mb-10">
+        <p className="text-base sm:text-lg lg:text-xl text-[#EBE3D4] font-normal max-w-2xl mx-auto leading-relaxed mb-10">
           Tell us about your child, their academic and athletic goals, and the journey ahead.
         </p>
 

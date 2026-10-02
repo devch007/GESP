@@ -17,11 +17,11 @@ export default function StudentAthletes({ onOpenConsultation }: StudentAthletesP
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
-          <h2 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-normal text-[#333333] leading-tight">
+        <div className="max-w-3xl mb-14">
+          <h2 className="text-3xl sm:text-5xl lg:text-[48px] font-semibold text-[#1A1A1A] leading-[1.12] mb-4">
             Where sport becomes part of the <span className="highlight-italic">education.</span>
           </h2>
-          <p className="text-base text-[#69727D] font-light mt-4 leading-relaxed max-w-2xl">
+          <p className="text-base sm:text-lg text-[#5A5E66] font-normal leading-relaxed max-w-2xl">
             For student-athletes, school isn&apos;t just about the classroom. It&apos;s where competition, discipline, friendships and personal growth become part of everyday life.
           </p>
         </div>

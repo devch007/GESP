@@ -60,12 +60,12 @@ export default function WhyGespIndia() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-14 gap-8">
           <div className="max-w-2xl">
-            <h2 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-normal text-[#1A1A1A] leading-[1.08] tracking-tight">
+            <h2 className="text-3xl sm:text-5xl lg:text-[48px] font-semibold text-[#1A1A1A] leading-[1.12] tracking-tight mb-4">
               We propose, they <span className="highlight-italic">choose.</span>
             </h2>
-            <p className="text-base sm:text-lg text-[#5A5E66] font-light mt-4 leading-relaxed">
+            <p className="text-base sm:text-lg text-[#5A5E66] font-normal leading-relaxed">
               Our network of 75+ boarding schools allows us to offer students the best options for them. Every student is unique, and that is why they need the school that best suits their needs.
             </p>
           </div>

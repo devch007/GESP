@@ -19,12 +19,12 @@ export default function BoardingExperience() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-8">
           <div className="max-w-2xl">
-            <h2 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-normal text-[#333333] leading-tight">
+            <h2 className="text-3xl sm:text-5xl lg:text-[48px] font-semibold text-[#1A1A1A] leading-[1.12] mb-4">
               Imagine their school being a <span className="highlight-italic">community.</span>
             </h2>
-            <p className="text-base text-[#5A5751] font-light mt-4 leading-relaxed">
+            <p className="text-base sm:text-lg text-[#5A5E66] font-normal leading-relaxed">
               Living on campus fosters intellectual curiosity, personal accountability, and lifelong friendships across a global peer group.
             </p>
           </div>

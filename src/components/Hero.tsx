@@ -44,7 +44,7 @@ export default function Hero({ onOpenConsultation, onExploreExperience }: HeroPr
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="font-heading text-4xl sm:text-6xl lg:text-7xl font-normal text-white leading-[1.08] tracking-tight"
+              className="text-4xl sm:text-6xl lg:text-[68px] font-semibold text-white leading-[1.08] tracking-tight"
             >
               Find the <span className="highlight-italic-gold">Right</span> U.S. Boarding School for Your Child.
             </motion.h1>
@@ -55,7 +55,7 @@ export default function Hero({ onOpenConsultation, onExploreExperience }: HeroPr
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="text-base sm:text-lg lg:text-xl text-[#EBE3D4] font-light max-w-2xl leading-relaxed mb-10"
+            className="text-base sm:text-lg lg:text-xl text-[#EBE3D4] font-normal max-w-2xl leading-relaxed mb-10"
           >
             Global Education &amp; Sports Partners (GESP) helps Indian families identify boarding schools where their child can thrive—based on academic profile, interests, athletic ambitions, and family priorities.
           </motion.p>
