@@ -2103,5 +2103,369 @@ body {
   }
 }
 
+/* ==========================================================================
+   Need Answers? FAQ Section & Consult Card Styles
+   Aesthetic off-white / light cream background matching gespeducation.com
+   ========================================================================== */
+.gesp-faq-section {
+  position: relative;
+  background: #FDFBF7;
+  padding: 100px 0 110px;
+  border-top: 1px solid #ECE7DE;
+  border-bottom: 1px solid #ECE7DE;
+  font-family: inherit;
+}
+
+.gesp-faq-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.gesp-faq-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+/* Left Column: FAQ Accordion */
+.gesp-faq-content-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  background: rgba(250, 185, 0, 0.12);
+  border: 1px solid rgba(250, 185, 0, 0.35);
+  color: #8C6400;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  width: fit-content;
+}
+
+.gesp-faq-title {
+  font-family: 'Fraunces', 'Vielotta', 'Georgia', serif;
+  font-size: 44px;
+  font-weight: 700;
+  color: #071739;
+  line-height: 1.15;
+  margin: 0 0 14px;
+  letter-spacing: -0.02em;
+}
+
+.gesp-faq-subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #64748B;
+  margin: 0 0 36px;
+  max-width: 540px;
+}
+
+.gesp-accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.gesp-accordion-item {
+  background: #FFFFFF;
+  border: 1px solid #E8E3D9;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(7, 23, 57, 0.02);
+}
+
+.gesp-accordion-item:hover {
+  border-color: #D3CABA;
+  box-shadow: 0 6px 20px rgba(7, 23, 57, 0.05);
+}
+
+.gesp-accordion-item.active {
+  border-color: #FAB900;
+  box-shadow: 0 6px 24px rgba(250, 185, 0, 0.12), 0 0 0 1px #FAB900;
+}
+
+.gesp-accordion-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.gesp-accordion-question {
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  color: #071739;
+  line-height: 1.35;
+  transition: color 0.2s ease;
+}
+
+.gesp-accordion-item.active .gesp-accordion-question {
+  color: #071739;
+}
+
+.gesp-accordion-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #F4F1EA;
+  color: #071739;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.gesp-accordion-item.active .gesp-accordion-icon {
+  background: #FAB900;
+  color: #071739;
+}
+
+.gesp-accordion-icon svg .v-line {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  transform-origin: center;
+}
+
+.gesp-accordion-item.active .gesp-accordion-icon svg .v-line {
+  opacity: 0;
+  transform: rotate(90deg) scale(0);
+}
+
+.gesp-accordion-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gesp-accordion-body {
+  padding: 0 24px 22px;
+  font-size: 15px;
+  line-height: 1.68;
+  color: #475569;
+}
+
+.gesp-accordion-body p {
+  margin: 0 0 12px;
+}
+
+.gesp-accordion-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Right Column: Direct Consultation Card */
+.gesp-faq-consult-card {
+  background: #FFFFFF;
+  border: 1px solid #E8E3D9;
+  border-radius: 24px;
+  padding: 38px 34px 34px;
+  box-shadow: 
+    0 20px 45px rgba(7, 23, 57, 0.06),
+    0 1px 3px rgba(7, 23, 57, 0.04);
+}
+
+.faq-card-header {
+  margin-bottom: 24px;
+}
+
+.faq-card-title {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  color: #071739;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+}
+
+.faq-card-desc {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #64748B;
+  margin: 0;
+}
+
+.faq-inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.faq-input-wrap {
+  width: 100%;
+}
+
+.faq-input,
+.faq-textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  color: #071739;
+  background: #FFFFFF;
+  border: 1.5px solid #CBD5E1;
+  border-radius: 12px;
+  padding: 12px 16px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.faq-input::placeholder,
+.faq-textarea::placeholder {
+  color: #94A3B8;
+  font-size: 13.5px;
+}
+
+.faq-input:focus,
+.faq-textarea:focus {
+  border-color: #0D2153;
+  box-shadow: 0 0 0 3px rgba(13, 33, 83, 0.1);
+}
+
+.faq-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Pills Tag Group */
+.faq-pill-selection-group {
+  margin-top: 4px;
+}
+
+.faq-pill-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #071739;
+  margin-bottom: 10px;
+}
+
+.faq-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.faq-tag-pill {
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+  background: #F8FAFC;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-tag-pill:hover {
+  background: #EEF2F6;
+  border-color: #CBD5E1;
+  color: #071739;
+}
+
+.faq-tag-pill.active {
+  background: #1877F2;
+  border-color: #1877F2;
+  color: #FFFFFF;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(24, 119, 242, 0.25);
+}
+
+/* Submit Button */
+.faq-submit-btn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 15px 24px;
+  background: #FAB900;
+  color: #071739;
+  border: none;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 6px 18px rgba(250, 185, 0, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-submit-btn:hover {
+  background: #E5A800;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(250, 185, 0, 0.38);
+}
+
+.faq-submit-btn:active {
+  transform: translateY(0);
+}
+
+.faq-success-notice {
+  margin-top: 10px;
+  padding: 12px 16px;
+  background: #ECFDF5;
+  border: 1px solid #A7F3D0;
+  border-radius: 10px;
+  color: #065F46;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .gesp-faq-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gesp-faq-section {
+    padding: 70px 0 80px;
+  }
+  .gesp-faq-container {
+    padding: 0 20px;
+  }
+  .gesp-faq-title {
+    font-size: 32px;
+  }
+  .gesp-faq-consult-card {
+    padding: 26px 20px;
+    border-radius: 18px;
+  }
+  .faq-form-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
 
 
