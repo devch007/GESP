@@ -1,0 +1,12 @@
+{
+  "buildCommand": null,
+  "outputDirectory": "study-abroad",
+  "framework": null,
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    }
+  ]
+}
