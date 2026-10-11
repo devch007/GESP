@@ -527,65 +527,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Right Column: Consultation Card "Not sure where to start?" -->
-      <div class="gesp-faq-form-col">
-        <div class="gesp-faq-consult-card">
-          <div class="faq-card-header">
-            <h3 class="faq-card-title">Not sure where to start?</h3>
-            <p class="faq-card-desc">
-              Tell us a little about your student and family priorities. One of our consultants will reach out to discuss next steps.
-            </p>
-          </div>
-
-          <form id="faqConsultForm" onsubmit="handleFaqFormSubmit(event)" class="faq-inquiry-form">
-            <div class="faq-form-row">
-              <div class="faq-input-wrap">
-                <input type="text" id="faqParentName" name="parentName" required placeholder="Parent / Guardian Name" class="faq-input">
-              </div>
-              <div class="faq-input-wrap">
-                <input type="email" id="faqEmail" name="email" required placeholder="Email Address" class="faq-input">
-              </div>
-            </div>
-
-            <div class="faq-form-row">
-              <div class="faq-input-wrap">
-                <input type="tel" id="faqPhone" name="phone" required placeholder="Phone / WhatsApp" class="faq-input">
-              </div>
-              <div class="faq-input-wrap">
-                <input type="text" id="faqCountry" name="country" placeholder="Country of Residence" class="faq-input">
-              </div>
-            </div>
-
-            <div class="faq-input-wrap">
-              <input type="text" id="faqGrade" name="grade" placeholder="Student Age / Grade" class="faq-input">
-            </div>
-
-            <div class="faq-pill-selection-group">
-              <label class="faq-pill-label">What are you looking for help with? <span class="text-amber-500">*</span></label>
-              <div class="faq-tags-container">
-                <button type="button" class="faq-tag-pill active" onclick="toggleFaqTag(this)">Finding the Right School</button>
-                <button type="button" class="faq-tag-pill active" onclick="toggleFaqTag(this)">Student-Athlete Opportunities</button>
-                <button type="button" class="faq-tag-pill" onclick="toggleFaqTag(this)">Financial Aid / Scholarship</button>
-                <button type="button" class="faq-tag-pill" onclick="toggleFaqTag(this)">Applying to Schools</button>
-                <button type="button" class="faq-tag-pill" onclick="toggleFaqTag(this)">Not Sure Yet</button>
-                <button type="button" class="faq-tag-pill" onclick="toggleFaqTag(this)">Other</button>
-              </div>
-            </div>
-
-            <div class="faq-input-wrap">
-              <textarea id="faqNotes" name="notes" rows="3" placeholder="Tell us briefly what you're looking for." class="faq-textarea"></textarea>
-            </div>
-
-            <button type="submit" id="faqSubmitBtn" class="faq-submit-btn">
-              <span>Talk to GESP expert</span>
-            </button>
-            <div id="faqSuccessAlert" class="faq-success-notice" style="display: none;">
-              ✓ Thank you! An advisor will reach out to you shortly.
-            </div>
-          </form>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -875,38 +816,6 @@
         answer.style.maxHeight = answer.scrollHeight + 'px';
       }
     }
-  }
-
-  /* FAQ Pills Tag Selection */
-  function toggleFaqTag(btn) {
-    btn.classList.toggle('active');
-  }
-
-  /* FAQ Consultation Form Submit */
-  function handleFaqFormSubmit(e) {
-    e.preventDefault();
-    const btn = document.getElementById('faqSubmitBtn');
-    const notice = document.getElementById('faqSuccessAlert');
-    const form = document.getElementById('faqConsultForm');
-
-    if (btn) {
-      btn.disabled = true;
-      btn.innerHTML = '<span>Sending Request...</span>';
-    }
-
-    setTimeout(() => {
-      if (btn) {
-        btn.disabled = false;
-        btn.innerHTML = '<span>Talk to GESP expert</span>';
-      }
-      if (notice) {
-        notice.style.display = 'block';
-        setTimeout(() => {
-          notice.style.display = 'none';
-        }, 5000);
-      }
-      if (form) form.reset();
-    }, 600);
   }
 </script>
 
