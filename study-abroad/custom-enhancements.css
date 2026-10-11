@@ -2132,6 +2132,14 @@ body {
   flex-direction: column;
 }
 
+.gesp-faq-header {
+  text-align: center;
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .faq-pill-badge {
   display: inline-flex;
   align-items: center;
@@ -2159,12 +2167,19 @@ body {
   letter-spacing: -0.02em;
 }
 
+.faq-title-accent {
+  color: #FAB900;
+  position: relative;
+  display: inline-block;
+}
+
 .gesp-faq-subtitle {
   font-size: 16px;
   line-height: 1.6;
   color: #64748B;
-  margin: 0 0 36px;
-  max-width: 640px;
+  margin: 0;
+  max-width: 620px;
+  text-align: center;
 }
 
 .gesp-accordion-list {
