@@ -1648,6 +1648,71 @@ body {
   font-size: 13.5px;
 }
 
+/* Role Selector Segmented Controls (Parent / Student) */
+.gesp-role-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.gesp-role-option {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.gesp-role-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.gesp-role-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 14px;
+  background: #F8FAFC;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 12px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #475569;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gesp-role-pill svg {
+  flex-shrink: 0;
+  stroke: #64748B;
+  transition: stroke 0.2s ease, transform 0.2s ease;
+}
+
+.gesp-role-option:hover .gesp-role-pill {
+  border-color: #CBD5E1;
+  background: #FFFFFF;
+  color: #0D2153;
+}
+
+.gesp-role-option input[type="radio"]:checked + .gesp-role-pill {
+  background: #0D2153;
+  border-color: #0D2153;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px -3px rgba(13, 33, 83, 0.35);
+}
+
+.gesp-role-option input[type="radio"]:checked + .gesp-role-pill svg {
+  stroke: #FAB900;
+  transform: scale(1.08);
+}
+
+.gesp-role-option input[type="radio"]:focus-visible + .gesp-role-pill {
+  box-shadow: 0 0 0 3px rgba(250, 185, 0, 0.35);
+}
+
 .gesp-form-submit-btn {
   display: flex;
   align-items: center;
