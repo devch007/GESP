@@ -2348,18 +2348,140 @@ body {
   margin-bottom: 0;
 }
 
+/* ==========================================================================
+   Global Network Section Styling
+   ========================================================================== */
+.gesp-network-section {
+  position: relative;
+  padding: 100px 0 110px;
+  background: linear-gradient(180deg, #FAF8F5 0%, #F5F1EA 100%);
+  overflow: hidden;
+}
+
+.gesp-network-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.gesp-network-header {
+  max-width: 780px;
+  margin: 0 auto 54px;
+}
+
+.network-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(250, 185, 0, 0.12);
+  border: 1px solid rgba(250, 185, 0, 0.35);
+  color: #0D2153;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  margin-bottom: 18px;
+}
+
+.gesp-network-title {
+  font-family: 'Vielotta', 'Plus Jakarta Sans', serif;
+  font-size: 46px;
+  font-weight: 700;
+  color: #0D2153;
+  line-height: 1.18;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.gesp-network-subtitle {
+  font-size: 17px;
+  line-height: 1.65;
+  color: #556277;
+  margin: 0;
+}
+
+/* Map Card */
+.gesp-map-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 
+    0 20px 50px -15px rgba(13, 33, 83, 0.09),
+    0 4px 16px rgba(0, 0, 0, 0.03),
+    0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  padding: 36px 36px 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gesp-map-card::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  right: -100px;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(250, 185, 0, 0.12) 0%, rgba(250, 185, 0, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.gesp-map-card::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -80px;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(13, 33, 83, 0.06) 0%, rgba(13, 33, 83, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.gesp-map-frame {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.gesp-map-img {
+  width: 100%;
+  height: auto;
+  max-width: 1100px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
 /* Responsiveness */
-@media (max-width: 640px) {
-  .gesp-faq-section {
+@media (max-width: 768px) {
+  .gesp-network-section {
     padding: 70px 0 80px;
   }
-  .gesp-faq-container {
+  .gesp-network-container {
     padding: 0 20px;
   }
-  .gesp-faq-title {
+  .gesp-network-title {
     font-size: 32px;
   }
+  .gesp-network-subtitle {
+    font-size: 15px;
+  }
+  .gesp-map-card {
+    padding: 20px 16px 20px;
+    border-radius: 20px;
+  }
 }
+
 
 
 
