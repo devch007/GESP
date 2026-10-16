@@ -2856,14 +2856,14 @@ body {
   flex-grow: 1;
 }
 
-/* Bottom Row with Button & 3D Floating Graphic */
+/* Bottom Row with 3D Floating Graphic */
 .trust-card-bottom-row {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: flex-end;
   position: relative;
   margin-top: auto;
-  min-height: 85px;
+  min-height: 70px;
 }
 
 /* Pill Action Button */
