@@ -57,9 +57,8 @@
 - **Factual "About GESP" Knowledge Block**: Added a plain-language summary block with semantic HTML (`<section>`, `<article>`) before the footer for AI answer engines to quote directly.
 - **High-Intent AI Questions Added to Page & Schema**:
   1. *Can Indian students get sports scholarships at US boarding schools?*
-  2. *How do US coaches recruit athletes from India?*
-  3. *Does a US boarding school help my child play college sports in America?*
-  4. *What age should my child move to the US for sports?*
+  2. *Does a US boarding school help my child play college sports in America?*
+  3. *What age should my child move to the US for sports?*
 
 ---
 
