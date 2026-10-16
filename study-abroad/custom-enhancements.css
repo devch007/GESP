@@ -2519,6 +2519,53 @@ body {
   margin: 0 auto;
 }
 
+/* AI Facts Section */
+.gesp-about-facts-section {
+  padding: 50px 20px;
+  background: #FDFBF7;
+}
+
+.gesp-about-facts-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gesp-about-card {
+  background: #FFFFFF;
+  border: 1px solid #E6E2D8;
+  border-radius: 20px;
+  padding: 32px 36px;
+  box-shadow: 0 4px 20px rgba(13, 33, 83, 0.04);
+}
+
+.gesp-about-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #0D2153;
+  background: rgba(250, 185, 0, 0.2);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  margin-bottom: 12px;
+}
+
+.gesp-about-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0D2153;
+  margin: 0 0 12px 0;
+}
+
+.gesp-about-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #475569;
+  margin: 0;
+}
+
 /* Responsiveness */
 @media (max-width: 768px) {
   .gesp-network-section {

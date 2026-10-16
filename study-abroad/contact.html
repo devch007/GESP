@@ -10,7 +10,9 @@
 
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://india.gespeducation.com/contact.html">
-  <meta name="keywords" content="contact GESP, US boarding school consultation, student athlete advisory India, study abroad advisory India, boarding school admissions call">
+  <link rel="alternate" hreflang="en-IN" href="https://india.gespeducation.com/contact.html">
+  <link rel="alternate" hreflang="x-default" href="https://india.gespeducation.com/contact.html">
+  <meta name="keywords" content="contact GESP, US boarding school consultation, student athlete advisory India, study abroad advisory India, boarding school admissions call, sports scholarship USA for Indian students">
   <meta name="author" content="Global Education &amp; Sports Partners (GESP)">
   <meta name="geo.region" content="IN">
   <meta name="geo.placename" content="India">
@@ -41,27 +43,48 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="custom-enhancements.css">
 
-  <!-- Structured Data / JSON-LD for Contact Page -->
+  <!-- Structured Data / JSON-LD for Contact Page & Breadcrumbs -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "name": "Contact GESP — Schedule a Strategy Session",
-    "url": "https://india.gespeducation.com/contact.html",
-    "description": "Book a confidential strategy session with senior education advisors for U.S. boarding school admissions and varsity athletic recruitment.",
-    "mainEntity": {
-      "@type": "EducationalOrganization",
-      "name": "Global Education & Sports Partners",
-      "alternateName": "GESP",
-      "url": "https://india.gespeducation.com/",
-      "logo": "https://india.gespeducation.com/images/gesp-logo-exact.png",
-      "sameAs": [
-        "https://instagram.com/gespindia",
-        "https://www.youtube.com/@GESPIndia",
-        "https://www.facebook.com/61595240847933",
-        "https://linktr.ee/gesp.india"
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "name": "Contact GESP — Schedule a Strategy Session",
+        "url": "https://india.gespeducation.com/contact.html",
+        "description": "Book a confidential strategy session with senior education advisors for U.S. boarding school admissions and varsity athletic recruitment.",
+        "mainEntity": {
+          "@type": "EducationalOrganization",
+          "name": "Global Education & Sports Partners",
+          "alternateName": "GESP",
+          "url": "https://india.gespeducation.com/",
+          "logo": "https://india.gespeducation.com/images/gesp-logo-exact.png",
+          "sameAs": [
+            "https://instagram.com/gespindia",
+            "https://www.youtube.com/@GESPIndia",
+            "https://www.facebook.com/61595240847933",
+            "https://linktr.ee/gesp.india"
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://india.gespeducation.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact & Strategy Session",
+            "item": "https://india.gespeducation.com/contact.html"
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -524,13 +547,6 @@
         <p class="footer-copyright">
           &copy; 2026 Global Education &amp; Sports Partners (GESP). All rights reserved.
         </p>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <span class="footer-sep">&bull;</span>
-          <a href="#">Terms of Service</a>
-          <span class="footer-sep">&bull;</span>
-          <a href="#">School Partnerships</a>
-        </div>
       </div>
     </div>
   </footer>
