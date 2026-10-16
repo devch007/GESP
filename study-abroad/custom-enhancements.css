@@ -2844,23 +2844,28 @@ body {
   transform: scale(1.08);
 }
 
-/* Headings & Descriptions */
+/* Headings & Descriptions - Consistent Strict Hierarchy */
 .gesp-trust-card .trust-card-title {
-  font-family: 'Outfit', -apple-system, sans-serif;
-  font-size: 21px;
-  font-weight: 800;
+  font-family: 'Fraunces', 'Vielotta', 'Outfit', serif;
+  font-size: 19px;
+  font-weight: 700;
   color: #0F172A;
-  line-height: 1.28;
+  line-height: 1.35;
   margin: 0 0 12px;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
+  min-height: 52px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .gesp-trust-card .trust-card-desc {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   font-size: 13.5px;
-  line-height: 1.6;
-  color: #64748B;
-  margin: 0 0 22px;
+  line-height: 1.62;
+  color: #556277;
+  margin: 0 0 20px;
   flex-grow: 1;
+  min-height: 88px;
 }
 
 /* Bottom Row with 3D Floating Graphic */
@@ -3063,13 +3068,18 @@ body {
     border-radius: 22px;
   }
   .gesp-trust-card .trust-card-title {
-    font-size: 19px;
+    font-size: 18px;
+    line-height: 1.32;
+    min-height: auto;
   }
   .gesp-trust-card .trust-card-desc {
-    font-size: 13px;
+    font-size: 13.5px;
+    line-height: 1.58;
+    min-height: auto;
+    margin-bottom: 16px;
   }
   .trust-card-bottom-row {
-    min-height: 75px;
+    min-height: 65px;
   }
   .shield-3d-body, .pebble-3d, .globe-3d {
     transform: scale(0.85);
