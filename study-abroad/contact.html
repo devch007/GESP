@@ -50,6 +50,10 @@
   <meta name="twitter:image:alt" content="GESP - Global Education &amp; Sports Partners">
 
   <link rel="icon" href="images/gesp-logo-exact.png" type="image/png">
+  
+  <!-- Performance Preconnect & Preloads for Speed Insights -->
+  <link rel="preload" href="fonts/Vielotta-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="custom-enhancements.css">
 
@@ -106,7 +110,7 @@
     <div class="gesp-glass-nav-container">
       <a href="index.html" class="flex items-center gap-3">
         <img src="images/gesp-logo-exact.png" alt="GESP - Global Education &amp; Sports Partners"
-          class="gesp-glass-logo">
+          class="gesp-glass-logo" width="168" height="46" fetchpriority="high">
       </a>
 
       <!-- Center Navigation Links -->
@@ -484,7 +488,7 @@
         <div class="footer-col-brand">
           <a href="index.html" class="footer-logo-link">
             <img src="images/gesp-logo-exact.png" alt="GESP - Global Education &amp; Sports Partners"
-              class="footer-logo-img">
+              class="footer-logo-img" width="160" height="44" loading="lazy" decoding="async">
           </a>
           <p class="footer-brand-bio">
             Global Education &amp; Sports Partners guides ambitious students and families worldwide into premier U.S.
