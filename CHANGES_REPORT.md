@@ -13,7 +13,13 @@
 
 ---
 
-## 2. Floating WhatsApp Quick Connect Button
+## 2. Google Analytics 4 (GA4) Tracking Setup
+- Installed Google tag (`gtag.js`) with Measurement ID **`G-DJKVJKFDR5`** across all key pages (`index.html` and `contact.html`) immediately after the opening `<head>` tag.
+- Enables tracking for real-time visitors, user acquisition channels, page views, and event reporting.
+
+---
+
+## 3. Floating WhatsApp Quick Connect Button
 - Added a floating WhatsApp button in the bottom-right corner of both `index.html` and `contact.html`.
   - **Direct Number**: `+91 86509 21200` (`https://wa.me/918650921200`)
   - **Pre-filled Message**: *"Hi GESP team, I would like to know more about U.S. boarding school admissions and athletic guidance."*
@@ -21,7 +27,7 @@
 
 ---
 
-## 3. On-Page SEO (Google Search Engine Optimization)
+## 4. On-Page SEO (Google Search Engine Optimization)
 - **Title Tag**: Optimized to `US Boarding School Consultant India | GESP` (under 60 characters).
 - **Meta Description**: Natural, high-intent summary (152 characters) targeting Indian parents.
 - **Target Keywords**: Added primary & secondary keywords:
@@ -44,14 +50,14 @@
 
 ---
 
-## 4. Structured Data / Schema.org (JSON-LD)
+## 5. Structured Data / Schema.org (JSON-LD)
 - **`EducationalOrganization`** & **`Service`**: Rich snippets highlighting GESP's educational advisory, official social channels, and India targeting.
-- **`FAQPage`**: Implemented structured data for 9 core questions (including sports scholarships, coach recruitment, and age eligibility) to unlock Google rich snippets.
+- **`FAQPage`**: Implemented structured data for core questions (including sports scholarships, athletic pathways, and age eligibility) to unlock Google rich snippets.
 - **`ContactPage`** & **`BreadcrumbList`**: Structured markup on `contact.html` mapping navigation hierarchy.
 
 ---
 
-## 5. AI / LLM Visibility (ChatGPT, Claude, Perplexity & Google AI Overviews)
+## 6. AI / LLM Visibility (ChatGPT, Claude, Perplexity & Google AI Overviews)
 - **Created `/llms.txt`**: Added an industry-standard markdown file (`study-abroad/llms.txt`) providing a clean knowledge summary of GESP's services, target audience, age/grade eligibility (Grade 6 to PG year), varsity sports programs, and key URLs.
 - **Robots Directives (`robots.txt`)**: Explicitly configured allow permissions for AI search crawlers (`GPTBot`, `ClaudeBot`, `PerplexityBot`, `Google-Extended`, and `OAI-SearchBot`) alongside Googlebot, and referenced `sitemap.xml`.
 - **Factual "About GESP" Knowledge Block**: Added a plain-language summary block with semantic HTML (`<section>`, `<article>`) before the footer for AI answer engines to quote directly.
@@ -62,9 +68,7 @@
 
 ---
 
-## 6. Site Navigation & UX Streamlining
-- **Navigation Menu**: Reduced header items from 6 to 4 focused links:
-
-
----
+## 7. Site Navigation & UX Streamlining
+- **Navigation Menu**: Focused header navigation on key conversion and value pages (*Why US Boarding Schools*, *Athletics & Scholarships*, *Admissions Process*, *Contact Us*).
+- **CTA Routing**: All "Book Strategy Session" buttons routed to open the interactive booking modal or navigate directly to `contact.html`.
 
