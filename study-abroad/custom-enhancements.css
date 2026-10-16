@@ -2947,24 +2947,26 @@ body {
   backdrop-filter: blur(4px);
 }
 
-/* 2. 3D Pebble / Amber Teardrop (Gold) */
-.pebble-3d {
-  width: 82px;
-  height: 90px;
-  background: radial-gradient(circle at 40% 30%, #FDE68A 0%, #F59E0B 50%, #B45309 100%);
-  border-radius: 35% 65% 55% 45% / 45% 40% 60% 55%;
-  box-shadow: 
-    inset 0 6px 12px rgba(255, 255, 255, 0.7),
-    inset 0 -8px 14px rgba(120, 53, 15, 0.4),
-    0 16px 28px rgba(245, 158, 11, 0.35);
+/* 2. 3D Food Bowl Graphic */
+.food-bowl-3d {
+  width: 105px;
+  height: 105px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotate(-12deg);
+  filter: drop-shadow(0 14px 22px rgba(217, 119, 6, 0.28));
+  transition: transform 0.3s ease;
 }
 
-.pebble-inner {
-  filter: drop-shadow(0 4px 8px rgba(180, 83, 9, 0.4));
+.gesp-trust-card:hover .food-bowl-3d {
+  transform: scale(1.08) rotate(3deg);
+}
+
+.food-bowl-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 /* 3. 3D Isometric Purple Blocks */
