@@ -2714,6 +2714,13 @@ body {
   letter-spacing: -0.02em;
 }
 
+.trust-title-gradient {
+  background: linear-gradient(135deg, #FAB900 0%, #D97706 70%, #B45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
 .gesp-trust-subtitle {
   font-size: clamp(14.5px, 1.8vw, 16.5px);
   line-height: 1.65;
