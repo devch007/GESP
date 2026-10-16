@@ -2584,8 +2584,59 @@ body {
     padding: 20px 16px 20px;
     border-radius: 20px;
   }
+}/* Floating WhatsApp Button */
+.gesp-floating-whatsapp {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #FFFFFF !important;
+  text-decoration: none;
+  padding: 13px 20px 13px 16px;
+  border-radius: 9999px;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4), 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Outfit', -apple-system, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
 }
 
+.gesp-floating-whatsapp:hover {
+  background: #20BD5A;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 30px rgba(37, 211, 102, 0.5), 0 6px 14px rgba(0, 0, 0, 0.15);
+  color: #FFFFFF !important;
+}
 
+.gesp-floating-whatsapp svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  flex-shrink: 0;
+}
 
+.gesp-wa-text {
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
 
+@media (max-width: 640px) {
+  .gesp-floating-whatsapp {
+    bottom: 20px;
+    right: 20px;
+    padding: 13px;
+    border-radius: 50%;
+  }
+  .gesp-floating-whatsapp .gesp-wa-text {
+    display: none;
+  }
+  .gesp-floating-whatsapp svg {
+    width: 26px;
+    height: 26px;
+  }
+}
