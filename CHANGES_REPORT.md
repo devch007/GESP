@@ -72,3 +72,12 @@
 - **Navigation Menu**: Focused header navigation on key conversion and value pages (*Why US Boarding Schools*, *Athletics & Scholarships*, *Admissions Process*, *Contact Us*).
 - **CTA Routing**: All "Book Strategy Session" buttons routed to open the interactive booking modal or navigate directly to `contact.html`.
 
+---
+
+## 8. "Parent Concerns Addressed" Trust Badges & Reassurance Cards
+- Added a dedicated 4-pillar trust section placed directly below the hero section addressing primary anxieties of Indian parents sending young students (13–17) abroad:
+  1. **24/7 Residential Care & Campus Safety**: Faculty live-in dorm advisors, 24/7 on-campus health/nursing centers, and real-time family updates.
+  2. **Indian Food & Dietary Accommodation**: Fresh daily vegetarian, vegan, and specialized Jain/halal diet verification during school selection.
+  3. **Ivy League & Top U.S. College Placement**: Direct admissions feeder record to Harvard, Yale, Princeton, Stanford, MIT, and NCAA Division I universities with dedicated 10:1 college counseling.
+  4. **Financial Aid & Merit Grant Advocacy**: Step-by-step guidance navigating SSS/Clarity financial aid applications and unlocking institutional endowment aid/scholarships for international scholars.
+
