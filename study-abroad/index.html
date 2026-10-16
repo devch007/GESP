@@ -256,107 +256,146 @@
     </div>
 
     <div class="gesp-trust-cards-grid">
-      <!-- Card 1: Safety & Residential Care -->
-      <div class="gesp-trust-card">
-        <div class="trust-card-icon-wrap icon-safety">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            <polyline points="9 12 11 14 15 10"></polyline>
-          </svg>
+      <!-- Card 1: Safety & Residential Care (Blue Theme) -->
+      <div class="gesp-trust-card card-blue-theme">
+        <div class="trust-card-top-row">
+          <span class="trust-pill-tag tag-blue">
+            <span class="tag-dot"></span>
+            24/7 Campus Care
+          </span>
+          <button type="button" onclick="openGespModal()" class="trust-card-spark-btn" aria-label="Learn about campus safety">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/>
+            </svg>
+          </button>
         </div>
-        <div class="trust-card-badge">Safety First</div>
+
         <h3 class="trust-card-title">24/7 Residential Care &amp; Campus Safety</h3>
         <p class="trust-card-desc">
-          Gated, secure boarding communities with on-campus dorm parents, 24/7 registered nursing wellness centers, structured evening study hours, and real-time family communication.
+          Gated, secure boarding communities with on-campus dorm faculty, 24/7 health wellness centers, and structured safety protocols.
         </p>
-        <ul class="trust-card-checklist">
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FAB900" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <span>Faculty living in dorms as resident advisors</span>
-          </li>
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FAB900" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <span>Full medical center on campus with 24/7 staff</span>
-          </li>
-        </ul>
+
+        <div class="trust-card-bottom-row">
+          <button type="button" onclick="openGespModal()" class="trust-card-action-btn btn-blue">
+            <span>Explore Safety</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </button>
+
+          <!-- 3D Floating Shield Graphic -->
+          <div class="trust-floating-3d shield-3d" aria-hidden="true">
+            <div class="shield-3d-body">
+              <div class="shield-3d-inner">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Card 2: Food & Dietary Needs -->
-      <div class="gesp-trust-card">
-        <div class="trust-card-icon-wrap icon-food">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
-            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
-            <line x1="6" y1="1" x2="6" y2="4"></line>
-            <line x1="10" y1="1" x2="10" y2="4"></line>
-            <line x1="14" y1="1" x2="14" y2="4"></line>
-          </svg>
+      <!-- Card 2: Food & Dietary Needs (Amber/Gold Theme) -->
+      <div class="gesp-trust-card card-amber-theme">
+        <div class="trust-card-top-row">
+          <span class="trust-pill-tag tag-amber">
+            <span class="tag-dot"></span>
+            Indian &amp; Jain Diets
+          </span>
+          <button type="button" onclick="openGespModal()" class="trust-card-spark-btn" aria-label="Learn about dietary options">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/>
+            </svg>
+          </button>
         </div>
-        <div class="trust-card-badge">Comforts of Home</div>
+
         <h3 class="trust-card-title">Indian Food &amp; Dietary Accommodation</h3>
         <p class="trust-card-desc">
-          Campus dining halls offer daily vegetarian, vegan, and custom dietary meals cooked fresh. GESP specifically verifies dining accommodation for strict vegetarian and Jain diets during school selection.
+          Fresh vegetarian, vegan, and international dining stations. GESP specifically verifies accommodation for strict vegetarian and Jain diets.
         </p>
-        <ul class="trust-card-checklist">
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FAB900" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <span>Daily vegetarian &amp; international hot food stations</span>
-          </li>
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FAB900" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <span>Accommodations for Jain, halal &amp; allergy diets</span>
-          </li>
-        </ul>
+
+        <div class="trust-card-bottom-row">
+          <button type="button" onclick="openGespModal()" class="trust-card-action-btn btn-amber">
+            <span>Dietary Fit</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </button>
+
+          <!-- 3D Floating Leaf/Bowl Graphic -->
+          <div class="trust-floating-3d pebble-3d pebble-amber" aria-hidden="true">
+            <div class="pebble-inner">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L15 8L22 9L17 14L18 21L12 17.5L6 21L7 14L2 9L9 8L12 2Z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Card 3: Ivy League Placement -->
-      <div class="gesp-trust-card">
-        <div class="trust-card-icon-wrap icon-academic">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-          </svg>
+      <!-- Card 3: Ivy League Placement (Purple Theme) -->
+      <div class="gesp-trust-card card-purple-theme">
+        <div class="trust-card-top-row">
+          <span class="trust-pill-tag tag-purple">
+            <span class="tag-dot"></span>
+            Top 1% Feeder
+          </span>
+          <button type="button" onclick="openGespModal()" class="trust-card-spark-btn" aria-label="Learn about college placement">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/>
+            </svg>
+          </button>
         </div>
-        <div class="trust-card-badge">Academic Excellence</div>
+
         <h3 class="trust-card-title">Ivy League &amp; Top U.S. College Track Record</h3>
         <p class="trust-card-desc">
-          U.S. prep schools are premier feeder institutions to Harvard, Yale, Princeton, Stanford, MIT, and NCAA Division I universities, supported by full-time college counselors with 10:1 student ratios.
+          Feeder programs to Harvard, Yale, Princeton, Stanford, MIT, and NCAA D1 athletics with dedicated 10:1 college counselor mentorship.
         </p>
-        <ul class="trust-card-checklist">
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FAB900" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <span>Dedicated college admissions counseling starting in Grade 9</span>
-          </li>
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FAB900" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <span>Direct on-campus visits by top university admissions deans</span>
-          </li>
-        </ul>
+
+        <div class="trust-card-bottom-row">
+          <button type="button" onclick="openGespModal()" class="trust-card-action-btn btn-purple">
+            <span>Track Record</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </button>
+
+          <!-- 3D Floating Academic Blocks -->
+          <div class="trust-floating-3d cubes-3d" aria-hidden="true">
+            <div class="cube-item cube-1"></div>
+            <div class="cube-item cube-2"></div>
+            <div class="cube-item cube-3"></div>
+          </div>
+        </div>
       </div>
 
-      <!-- Card 4: Financial Aid & Scholarships -->
-      <div class="gesp-trust-card">
-        <div class="trust-card-icon-wrap icon-scholarship">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="1" x2="12" y2="23"></line>
-            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-          </svg>
+      <!-- Card 4: Financial Aid & Scholarships (Emerald Theme) -->
+      <div class="gesp-trust-card card-emerald-theme">
+        <div class="trust-card-top-row">
+          <span class="trust-pill-tag tag-emerald">
+            <span class="tag-dot"></span>
+            Endowment Grants
+          </span>
+          <button type="button" onclick="openGespModal()" class="trust-card-spark-btn" aria-label="Learn about financial aid">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/>
+            </svg>
+          </button>
         </div>
-        <div class="trust-card-badge">Financial Guidance</div>
+
         <h3 class="trust-card-title">Financial Aid &amp; Merit Grant Advocacy</h3>
         <p class="trust-card-desc">
-          High-end boarding doesn't always require full tuition. U.S. boarding endowments award millions in need-based financial aid and institutional grants to qualified international students and athletes.
+          Top schools award substantial institutional need-based aid. We leverage student-athlete profiles to optimize tuition grant awards.
         </p>
-        <ul class="trust-card-checklist">
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FAB900" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <span>Expert SSS / Clarity financial aid application support</span>
-          </li>
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FAB900" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <span>Athletic merit leveraged for maximum tuition offset</span>
-          </li>
-        </ul>
+
+        <div class="trust-card-bottom-row">
+          <button type="button" onclick="openGespModal()" class="trust-card-action-btn btn-emerald">
+            <span>Calculate Aid</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </button>
+
+          <!-- 3D Floating Globe / Sprout Graphic -->
+          <div class="trust-floating-3d globe-3d" aria-hidden="true">
+            <div class="globe-sphere">
+              <div class="globe-sprout">🌱</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -2666,14 +2666,14 @@ body {
 }
 
 /* ==========================================================================
-   Parent Concerns Addressed: Trust Pillars Cards
+   Parent Concerns Addressed: Edubull-Style Modern 3D Floating UI Cards
    ========================================================================== */
 .gesp-trust-pillars-section {
   position: relative;
   width: 100%;
-  padding: 85px 0 95px;
-  background: linear-gradient(180deg, #FFFFFF 0%, #FAF8F5 100%);
-  border-bottom: 1px solid #ECE7DD;
+  padding: 85px 0 100px;
+  background: #F4F6F9;
+  border-bottom: 1px solid #E5E9F0;
 }
 
 .gesp-trust-container {
@@ -2685,7 +2685,7 @@ body {
 .gesp-trust-header {
   text-align: center;
   max-width: 780px;
-  margin: 0 auto 50px;
+  margin: 0 auto 52px;
 }
 
 .gesp-trust-badge {
@@ -2694,7 +2694,7 @@ body {
   gap: 8px;
   padding: 6px 18px;
   border-radius: 9999px;
-  background: rgba(250, 185, 0, 0.14);
+  background: rgba(250, 185, 0, 0.16);
   border: 1px solid rgba(250, 185, 0, 0.45);
   color: #0D2153;
   font-size: 11.5px;
@@ -2717,130 +2717,321 @@ body {
 .gesp-trust-subtitle {
   font-size: clamp(14.5px, 1.8vw, 16.5px);
   line-height: 1.65;
-  color: #556277;
+  color: #64748B;
   margin: 0 auto;
 }
 
 .gesp-trust-cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
+  gap: 24px;
 }
 
+/* Base Card Style */
 .gesp-trust-card {
   position: relative;
-  background: #FFFFFF;
-  border: 1px solid #EBE4D5;
-  border-radius: 20px;
-  padding: 32px 26px 28px;
-  box-shadow: 0 8px 24px rgba(13, 33, 83, 0.04);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 28px;
+  padding: 26px 26px 24px;
   display: flex;
   flex-direction: column;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
 .gesp-trust-card:hover {
-  transform: translateY(-5px);
-  border-color: #FAB900;
-  box-shadow: 0 16px 36px rgba(250, 185, 0, 0.12), 0 6px 16px rgba(13, 33, 83, 0.06);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
 }
 
-.trust-card-icon-wrap {
-  width: 54px;
-  height: 54px;
-  border-radius: 14px;
+/* Card Themes (Soft pastel backgrounds matching screenshot) */
+.card-blue-theme {
+  background: linear-gradient(180deg, #F0F7FF 0%, #E6F0FA 100%);
+  border: 1.5px solid #D8E7F6;
+}
+
+.card-amber-theme {
+  background: linear-gradient(180deg, #FFF9F0 0%, #FDF1DC 100%);
+  border: 1.5px solid #F8E2BE;
+}
+
+.card-purple-theme {
+  background: linear-gradient(180deg, #FAF4FF 0%, #F1E5FD 100%);
+  border: 1.5px solid #E9D5FF;
+}
+
+.card-emerald-theme {
+  background: linear-gradient(180deg, #F0FDF8 0%, #DFF6EB 100%);
+  border: 1.5px solid #C5EED9;
+}
+
+/* Top Row: Pill Tag & Spark Button */
+.trust-card-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.trust-pill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 14px;
+  border-radius: 9999px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.tag-blue {
+  background: #E0EFFF;
+  color: #2563EB;
+}
+.tag-blue .tag-dot { background: #2563EB; }
+
+.tag-amber {
+  background: #FEE7C8;
+  color: #D97706;
+}
+.tag-amber .tag-dot { background: #D97706; }
+
+.tag-purple {
+  background: #EEDCFF;
+  color: #9333EA;
+}
+.tag-purple .tag-dot { background: #9333EA; }
+
+.tag-emerald {
+  background: #D1FAE5;
+  color: #059669;
+}
+.tag-emerald .tag-dot { background: #059669; }
+
+/* Circular Spark/Star Icon Button */
+.trust-card-spark-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #94A3B8;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
-  transition: transform 0.25s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
 }
 
-.gesp-trust-card:hover .trust-card-icon-wrap {
+.trust-card-spark-btn:hover {
+  background: #FFFFFF;
+  color: #0D2153;
   transform: scale(1.08);
 }
 
-.icon-safety {
-  background: #EFF6FF;
-  color: #2563EB;
-  border: 1px solid #DBEAFE;
-}
-
-.icon-food {
-  background: #FEF3C7;
-  color: #D97706;
-  border: 1px solid #FDE68A;
-}
-
-.icon-academic {
-  background: #F3E8FF;
-  color: #7E22CE;
-  border: 1px solid #E9D5FF;
-}
-
-.icon-scholarship {
-  background: #ECFDF5;
-  color: #059669;
-  border: 1px solid #A7F3D0;
-}
-
-.trust-card-badge {
-  font-size: 11px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #8C7851;
-  margin-bottom: 8px;
-}
-
-.trust-card-title {
-  font-family: 'Fraunces', 'Vielotta', 'Georgia', serif;
+/* Headings & Descriptions */
+.gesp-trust-card .trust-card-title {
+  font-family: 'Outfit', -apple-system, sans-serif;
   font-size: 21px;
-  font-weight: 700;
-  color: #0D2153;
-  line-height: 1.3;
+  font-weight: 800;
+  color: #0F172A;
+  line-height: 1.28;
   margin: 0 0 12px;
+  letter-spacing: -0.01em;
 }
 
-.trust-card-desc {
-  font-size: 14px;
-  line-height: 1.62;
-  color: #556277;
-  margin: 0 0 20px;
+.gesp-trust-card .trust-card-desc {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #64748B;
+  margin: 0 0 22px;
   flex-grow: 1;
 }
 
-.trust-card-checklist {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Bottom Row with Button & 3D Floating Graphic */
+.trust-card-bottom-row {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  border-top: 1px solid #F1ECE1;
-  padding-top: 18px;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  margin-top: auto;
+  min-height: 85px;
 }
 
-.trust-card-checklist li {
+/* Pill Action Button */
+.trust-card-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border-radius: 9999px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.trust-card-action-btn:hover {
+  transform: translateX(3px);
+  filter: brightness(1.06);
+}
+
+.btn-blue {
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+}
+
+.btn-amber {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  box-shadow: 0 6px 18px rgba(217, 119, 6, 0.35);
+}
+
+.btn-purple {
+  background: linear-gradient(135deg, #9333EA 0%, #7E22CE 100%);
+  box-shadow: 0 6px 18px rgba(147, 51, 234, 0.35);
+}
+
+.btn-emerald {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  box-shadow: 0 6px 18px rgba(5, 150, 105, 0.35);
+}
+
+/* 3D Floating Graphics (Positioned bottom right like Edubull reference) */
+.trust-floating-3d {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 1. 3D Shield (Blue) */
+.shield-3d-body {
+  width: 86px;
+  height: 94px;
+  background: radial-gradient(circle at 35% 30%, #60A5FA 0%, #2563EB 60%, #1D4ED8 100%);
+  border-radius: 20px 20px 44px 44px;
+  box-shadow: 
+    inset 0 4px 10px rgba(255, 255, 255, 0.6),
+    inset 0 -8px 14px rgba(15, 23, 42, 0.3),
+    0 16px 30px rgba(37, 99, 235, 0.35);
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 12.8px;
-  font-weight: 600;
-  line-height: 1.45;
-  color: #1E293B;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(8deg);
+  border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
-.trust-card-checklist li svg {
-  flex-shrink: 0;
-  margin-top: 2px;
+.shield-3d-inner {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
 }
 
-/* Responsiveness for Trust Cards */
-@media (max-width: 1120px) {
+/* 2. 3D Pebble / Amber Teardrop (Gold) */
+.pebble-3d {
+  width: 82px;
+  height: 90px;
+  background: radial-gradient(circle at 40% 30%, #FDE68A 0%, #F59E0B 50%, #B45309 100%);
+  border-radius: 35% 65% 55% 45% / 45% 40% 60% 55%;
+  box-shadow: 
+    inset 0 6px 12px rgba(255, 255, 255, 0.7),
+    inset 0 -8px 14px rgba(120, 53, 15, 0.4),
+    0 16px 28px rgba(245, 158, 11, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-12deg);
+}
+
+.pebble-inner {
+  filter: drop-shadow(0 4px 8px rgba(180, 83, 9, 0.4));
+}
+
+/* 3. 3D Isometric Purple Blocks */
+.cubes-3d {
+  width: 80px;
+  height: 75px;
+  position: relative;
+}
+
+.cube-item {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  box-shadow: 
+    inset 0 4px 8px rgba(255, 255, 255, 0.5),
+    0 10px 20px rgba(147, 51, 234, 0.3);
+}
+
+.cube-1 {
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(135deg, #C084FC 0%, #9333EA 100%);
+  transform: rotate(-10deg);
+}
+
+.cube-2 {
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(135deg, #A855F7 0%, #7E22CE 100%);
+  transform: rotate(15deg);
+}
+
+.cube-3 {
+  top: 0;
+  left: 20px;
+  background: linear-gradient(135deg, #E9D5FF 0%, #C084FC 100%);
+  transform: rotate(5deg);
+  box-shadow: 0 12px 24px rgba(147, 51, 234, 0.35);
+}
+
+/* 4. 3D Globe with Sprout */
+.globe-3d {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #6EE7B7 0%, #10B981 60%, #047857 100%);
+  box-shadow: 
+    inset 0 6px 12px rgba(255, 255, 255, 0.6),
+    inset 0 -8px 16px rgba(6, 78, 59, 0.4),
+    0 16px 30px rgba(16, 185, 129, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(10deg);
+}
+
+.globe-sprout {
+  font-size: 34px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+/* Responsive Rules */
+@media (max-width: 1140px) {
   .gesp-trust-cards-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 22px;
   }
 }
 
@@ -2856,16 +3047,27 @@ body {
   }
   .gesp-trust-cards-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 18px;
   }
   .gesp-trust-card {
-    padding: 24px 20px 22px;
+    padding: 24px 20px 20px;
+    border-radius: 22px;
   }
-  .trust-card-title {
+  .gesp-trust-card .trust-card-title {
     font-size: 19px;
   }
-  .trust-card-desc {
-    font-size: 13.5px;
-    margin-bottom: 16px;
+  .gesp-trust-card .trust-card-desc {
+    font-size: 13px;
+  }
+  .trust-card-bottom-row {
+    min-height: 75px;
+  }
+  .shield-3d-body, .pebble-3d, .globe-3d {
+    transform: scale(0.85);
+    right: -15px;
+  }
+  .cubes-3d {
+    transform: scale(0.85);
+    right: -15px;
   }
 }
