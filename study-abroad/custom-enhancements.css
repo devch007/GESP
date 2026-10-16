@@ -1510,10 +1510,13 @@ body {
 .gesp-modal-dialog {
   position: relative;
   width: 100%;
-  max-width: 480px;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background: #FFFFFF;
   border-radius: 26px;
-  padding: 40px 36px 36px;
+  padding: 36px 32px 32px;
   box-shadow: 
     0 25px 60px rgba(4, 18, 53, 0.25),
     0 0 0 1px rgba(230, 226, 216, 0.95);
@@ -1710,6 +1713,60 @@ body {
 }
 
 .gesp-role-option input[type="radio"]:focus-visible + .gesp-role-pill {
+  box-shadow: 0 0 0 3px rgba(250, 185, 0, 0.35);
+}
+
+/* Multi-select Help Topics Pills */
+.gesp-help-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+}
+
+.gesp-help-option {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.gesp-help-option input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.gesp-help-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #FFFFFF;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #475569;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gesp-help-option:hover .gesp-help-pill {
+  border-color: #CBD5E1;
+  color: #0D2153;
+}
+
+.gesp-help-option input[type="checkbox"]:checked + .gesp-help-pill {
+  background: #0D2153;
+  border-color: #0D2153;
+  color: #FFFFFF;
+  box-shadow: 0 3px 10px -2px rgba(13, 33, 83, 0.3);
+}
+
+.gesp-help-option input[type="checkbox"]:focus-visible + .gesp-help-pill {
   box-shadow: 0 0 0 3px rgba(250, 185, 0, 0.35);
 }
 
