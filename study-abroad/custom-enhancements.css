@@ -2845,15 +2845,15 @@ body {
   transform: scale(1.08);
 }
 
-/* Headings & Descriptions - Consistent Strict Hierarchy */
+/* Headings & Descriptions */
 .gesp-trust-card .trust-card-title {
-  font-family: 'Fraunces', 'Vielotta', 'Outfit', serif;
-  font-size: 19px;
-  font-weight: 700;
+  font-family: 'Outfit', -apple-system, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
   color: #0F172A;
-  line-height: 1.35;
+  line-height: 1.3;
   margin: 0 0 12px;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   min-height: 52px;
   display: flex;
   align-items: flex-start;
