@@ -256,7 +256,7 @@ body {
 
 .hero-title {
   font-family: var(--font-display) !important;
-  font-size: clamp(36px, 4.8vw, 62px) !important;
+  font-size: clamp(32px, 3.8vw, 50px) !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
   letter-spacing: -0.015em !important;
@@ -442,7 +442,7 @@ body {
 
 .bento-dim-title {
   font-family: var(--font-display) !important;
-  font-size: clamp(34px, 4.5vw, 56px) !important;
+  font-size: clamp(28px, 3.2vw, 42px) !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
   color: #0D2153 !important;
@@ -712,7 +712,7 @@ body {
     letter-spacing: 0.08em !important;
   }
   .hero-title {
-    font-size: clamp(30px, 7.8vw, 38px) !important;
+    font-size: clamp(26px, 6.5vw, 32px) !important;
     line-height: 1.28 !important;
     letter-spacing: -0.015em !important;
     margin-bottom: 20px !important;
@@ -821,9 +821,9 @@ body {
     margin-bottom: 16px !important;
   }
   .hero-title {
-    font-size: 28px !important;
-    line-height: 1.3 !important;
-    margin-bottom: 18px !important;
+    font-size: 25px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 16px !important;
   }
   .hero-description {
     font-size: 14.5px !important;
@@ -895,7 +895,7 @@ body {
 
 .gesp-marquee-title {
   font-family: var(--font-display) !important;
-  font-size: clamp(32px, 4.2vw, 54px) !important;
+  font-size: clamp(28px, 3.2vw, 42px) !important;
   font-weight: 700 !important;
   color: #0D2153 !important;
   line-height: 1.2 !important;
@@ -1087,7 +1087,7 @@ body {
 
 .gesp-pathway-title {
   font-family: var(--font-display) !important;
-  font-size: clamp(32px, 4.2vw, 54px) !important;
+  font-size: clamp(28px, 3.2vw, 42px) !important;
   font-weight: 700 !important;
   color: #0D2153 !important;
   line-height: 1.2 !important;
@@ -2012,7 +2012,7 @@ body {
 
 .contact-page-title {
   font-family: var(--font-display) !important;
-  font-size: clamp(34px, 4vw, 56px) !important;
+  font-size: clamp(28px, 3.2vw, 44px) !important;
   font-weight: 700 !important;
   color: #0D2153 !important;
   line-height: 1.2 !important;
@@ -2349,7 +2349,7 @@ body {
 
 .gesp-faq-title {
   font-family: var(--font-display) !important;
-  font-size: clamp(32px, 4vw, 48px) !important;
+  font-size: clamp(26px, 2.8vw, 38px) !important;
   font-weight: 700 !important;
   color: #0D2153 !important;
   line-height: 1.2 !important;
@@ -2540,7 +2540,7 @@ body {
 
 .gesp-network-title {
   font-family: var(--font-display) !important;
-  font-size: clamp(34px, 4.2vw, 52px) !important;
+  font-size: clamp(28px, 3.2vw, 42px) !important;
   font-weight: 700 !important;
   color: #0D2153 !important;
   line-height: 1.2 !important;
@@ -2784,7 +2784,7 @@ body {
 
 .gesp-trust-title {
   font-family: var(--font-display) !important;
-  font-size: clamp(34px, 4.5vw, 56px) !important;
+  font-size: clamp(28px, 3.2vw, 42px) !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
   color: #0D2153 !important;
