@@ -1,6 +1,26 @@
 /* ==========================================================================
-   Custom Brand Typography: Vielotta
+   Custom Brand Typography: Samsung Sharp Sans & Vielotta
    ========================================================================== */
+@font-face {
+  font-family: 'Samsung Sharp Sans';
+  src: url('fonts/SamsungSharpSans-Bold.woff2') format('woff2'),
+       url('fonts/SamsungSharpSans-Bold.woff') format('woff'),
+       url('fonts/SamsungSharpSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Samsung Sharp Sans';
+  src: url('fonts/SamsungSharpSans-Bold.woff2') format('woff2'),
+       url('fonts/SamsungSharpSans-Bold.woff') format('woff'),
+       url('fonts/SamsungSharpSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
   font-family: 'Vielotta';
   src: url('fonts/Vielotta-Regular.woff2') format('woff2'),
@@ -22,6 +42,14 @@
   --gesp-navy: #0D2153;
   --gesp-sand: #EBE3D4;
   --gesp-navy-deep: #041235;
+
+  /* Standardized Font Family System */
+  --font-display: 'Samsung Sharp Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Consistent Luxury Gold Gradient for Headings & Accents */
+  --gesp-gold-gradient: linear-gradient(135deg, #FAB900 0%, #E5A800 50%, #C89200 100%);
+  --gesp-hero-gradient: linear-gradient(135deg, #FFE27A 0%, #FAB900 55%, #E5A800 100%);
 }
 
 /* Smooth Scrolling & Base */
@@ -227,19 +255,26 @@ body {
 }
 
 .hero-title {
-  font-family: 'Vielotta', 'Outfit', serif !important;
-  font-size: clamp(34px, 4.8vw, 62px) !important;
+  font-family: var(--font-display) !important;
+  font-size: clamp(36px, 4.8vw, 62px) !important;
   font-weight: 700 !important;
-  line-height: 1.22 !important;
-  letter-spacing: -0.01em !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.015em !important;
   color: #ffffff !important;
   margin-bottom: 22px !important;
-  max-width: 820px !important;
-  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.6) !important;
+  max-width: 860px !important;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.6) !important;
 }
 
 .hero-title span {
-  color: #FAB900 !important;
+  background: linear-gradient(135deg, #FFE17D 0%, #FAB900 50%, #F59E0B 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: inline-block;
+  text-shadow: none !important;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.5));
 }
 
 .hero-description {
@@ -312,7 +347,7 @@ body {
 }
 
 .stat-item-number {
-  font-family: 'Vielotta', 'Outfit', serif !important;
+  font-family: var(--font-display) !important;
   font-size: clamp(26px, 3.2vw, 38px) !important;
   font-weight: 800 !important;
   color: #ffffff !important;
@@ -406,7 +441,7 @@ body {
 }
 
 .bento-dim-title {
-  font-family: 'Vielotta', 'Outfit', serif !important;
+  font-family: var(--font-display) !important;
   font-size: clamp(34px, 4.5vw, 56px) !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
@@ -416,7 +451,7 @@ body {
 }
 
 .bento-dim-title span {
-  background: linear-gradient(135deg, #FAB900 0%, #D49B00 100%);
+  background: var(--gesp-gold-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -579,16 +614,26 @@ body {
 .bento-dim-preview-overlay {
   position: absolute !important;
   inset: 0 !important;
-  /* Crystal clear natural vignette - pure black/neutral at bottom for text, NO blue */
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.45) 65%, rgba(0, 0, 0, 0.88) 100%) !important;
+  /* Deep cinematic dark overlay for crystal clear text readability */
+  background: linear-gradient(
+    180deg,
+    rgba(4, 18, 53, 0.15) 0%,
+    rgba(4, 18, 53, 0.55) 45%,
+    rgba(4, 18, 53, 0.92) 80%,
+    rgba(4, 18, 53, 0.98) 100%
+  ) !important;
   z-index: 2 !important;
 }
 
 .bento-dim-preview-content {
   position: relative !important;
   z-index: 3 !important;
-  padding: 44px !important;
+  padding: 40px !important;
   color: #ffffff !important;
+  background: linear-gradient(180deg, rgba(4, 18, 53, 0) 0%, rgba(4, 18, 53, 0.6) 30%, rgba(4, 18, 53, 0.88) 100%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 0 0 26px 26px;
 }
 
 .preview-badge {
@@ -602,7 +647,7 @@ body {
 }
 
 .preview-headline {
-  font-family: 'Vielotta', 'Outfit', serif !important;
+  font-family: var(--font-display) !important;
   font-size: clamp(26px, 2.5vw, 36px) !important;
   font-weight: 700 !important;
   color: #ffffff !important;
@@ -723,19 +768,42 @@ body {
     color: #E2E8F0 !important;
   }
   .bento-dimension-section {
-    padding: 70px 16px !important;
+    padding: 60px 16px !important;
   }
   .bento-dimension-container {
-    padding: 0 8px !important;
+    padding: 0 4px !important;
   }
   .bento-dim-preview {
-    min-height: 350px !important;
+    min-height: 420px !important;
+    border-radius: 22px !important;
   }
   .bento-dim-preview-content {
-    padding: 24px 20px !important;
+    padding: 28px 20px 24px !important;
+    background: linear-gradient(180deg, rgba(4, 18, 53, 0) 0%, rgba(4, 18, 53, 0.78) 22%, rgba(4, 18, 53, 0.96) 100%) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+  }
+  .preview-badge {
+    font-size: 11px !important;
+    letter-spacing: 0.1em !important;
+    margin-bottom: 6px !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8) !important;
+  }
+  .preview-headline {
+    font-size: 24px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 10px !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+  }
+  .preview-description {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    color: #F1F5F9 !important;
+    margin-bottom: 20px !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
   }
   .dim-interactive-card {
-    padding: 20px 18px !important;
+    padding: 18px 16px !important;
   }
 }
 
@@ -826,7 +894,7 @@ body {
 }
 
 .gesp-marquee-title {
-  font-family: 'Vielotta', 'Outfit', serif !important;
+  font-family: var(--font-display) !important;
   font-size: clamp(32px, 4.2vw, 54px) !important;
   font-weight: 700 !important;
   color: #0D2153 !important;
@@ -835,7 +903,7 @@ body {
 }
 
 .gesp-marquee-title span {
-  background: linear-gradient(135deg, #FAB900 0%, #D49B00 100%);
+  background: var(--gesp-gold-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1018,7 +1086,7 @@ body {
 }
 
 .gesp-pathway-title {
-  font-family: 'Vielotta', 'Outfit', serif !important;
+  font-family: var(--font-display) !important;
   font-size: clamp(32px, 4.2vw, 54px) !important;
   font-weight: 700 !important;
   color: #0D2153 !important;
@@ -1027,7 +1095,7 @@ body {
 }
 
 .gesp-pathway-title span {
-  background: linear-gradient(135deg, #FAB900 0%, #D49B00 100%);
+  background: var(--gesp-gold-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1076,11 +1144,11 @@ body {
 }
 
 .pathway-step-num {
-  font-family: 'Vielotta', 'Outfit', serif;
+  font-family: var(--font-display);
   font-size: 38px;
   font-weight: 800;
   line-height: 1;
-  background: linear-gradient(135deg, #FAB900 0%, #E4B603 100%);
+  background: var(--gesp-gold-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1169,7 +1237,7 @@ body {
 }
 
 .gesp-pathway-cta-title {
-  font-family: 'Vielotta', 'Outfit', serif;
+  font-family: var(--font-display);
   font-size: clamp(22px, 2.2vw, 30px);
   color: #FFFFFF;
   margin: 0 0 6px 0;
@@ -1188,7 +1256,7 @@ body {
   gap: 12px;
   padding: 16px 32px;
   border-radius: 14px;
-  background: linear-gradient(135deg, #FAB900 0%, #E4B603 100%);
+  background: var(--gesp-gold-gradient);
   color: #041235;
   font-size: 15px;
   font-weight: 700;
@@ -1573,7 +1641,7 @@ body {
 }
 
 .gesp-modal-title {
-  font-family: 'Vielotta', 'Outfit', serif !important;
+  font-family: var(--font-display) !important;
   font-size: 30px !important;
   font-weight: 700 !important;
   color: #0D2153 !important;
@@ -1778,7 +1846,7 @@ body {
   width: 100%;
   padding: 15px 24px;
   border-radius: 14px;
-  background: linear-gradient(135deg, #FAB900 0%, #E4B603 100%);
+  background: var(--gesp-gold-gradient);
   color: #041235;
   font-size: 15px;
   font-weight: 700;
@@ -1943,7 +2011,7 @@ body {
 }
 
 .contact-page-title {
-  font-family: 'Vielotta', 'Outfit', serif !important;
+  font-family: var(--font-display) !important;
   font-size: clamp(34px, 4vw, 56px) !important;
   font-weight: 700 !important;
   color: #0D2153 !important;
@@ -1952,7 +2020,7 @@ body {
 }
 
 .contact-page-title span {
-  background: linear-gradient(135deg, #FAB900 0%, #D49B00 100%);
+  background: var(--gesp-gold-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1990,11 +2058,11 @@ body {
 }
 
 .contact-card-heading {
-  font-family: 'Outfit', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: #0D2153;
-  margin: 0 0 20px 0;
+  font-family: var(--font-display) !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #0D2153 !important;
+  margin: 0 0 20px 0 !important;
 }
 
 .contact-expect-list {
@@ -2163,7 +2231,7 @@ body {
 }
 
 .form-card-title {
-  font-family: 'Vielotta', 'Outfit', serif;
+  font-family: var(--font-display);
   font-size: 28px;
   font-weight: 700;
   color: #0D2153;
@@ -2280,17 +2348,19 @@ body {
 }
 
 .gesp-faq-title {
-  font-family: 'Fraunces', 'Vielotta', 'Georgia', serif;
-  font-size: clamp(26px, 4vw, 42px);
-  font-weight: 700;
-  color: #071739;
-  line-height: 1.2;
-  margin: 0 0 14px;
-  letter-spacing: -0.02em;
+  font-family: var(--font-display) !important;
+  font-size: clamp(32px, 4vw, 48px) !important;
+  font-weight: 700 !important;
+  color: #0D2153 !important;
+  line-height: 1.2 !important;
+  margin: 0 0 16px;
+  letter-spacing: -0.015em;
 }
 
 .faq-title-accent {
-  color: #FAB900;
+  background: var(--gesp-gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: relative;
   display: inline-block;
 }
@@ -2469,13 +2539,20 @@ body {
 }
 
 .gesp-network-title {
-  font-family: 'Vielotta', 'Plus Jakarta Sans', serif;
-  font-size: 46px;
-  font-weight: 700;
-  color: #0D2153;
-  line-height: 1.18;
-  margin-bottom: 16px;
-  letter-spacing: -0.02em;
+  font-family: var(--font-display) !important;
+  font-size: clamp(34px, 4.2vw, 52px) !important;
+  font-weight: 700 !important;
+  color: #0D2153 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 16px !important;
+  letter-spacing: -0.015em !important;
+}
+
+.gesp-network-title span {
+  background: var(--gesp-gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .gesp-network-subtitle {
@@ -2576,11 +2653,12 @@ body {
 }
 
 .gesp-about-heading {
-  font-family: 'Outfit', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: #0D2153;
+  font-family: var(--font-display) !important;
+  font-size: clamp(20px, 2vw, 24px) !important;
+  font-weight: 700 !important;
+  color: #0D2153 !important;
   margin: 0 0 12px 0;
+  line-height: 1.3 !important;
 }
 
 .gesp-about-text {
@@ -2705,7 +2783,7 @@ body {
 }
 
 .gesp-trust-title {
-  font-family: 'Vielotta', 'Outfit', serif !important;
+  font-family: var(--font-display) !important;
   font-size: clamp(34px, 4.5vw, 56px) !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
@@ -2715,7 +2793,7 @@ body {
 }
 
 .trust-title-gradient {
-  background: linear-gradient(135deg, #FAB900 0%, #D49B00 100%);
+  background: var(--gesp-gold-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
