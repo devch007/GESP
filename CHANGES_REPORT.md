@@ -21,7 +21,7 @@
 
 ## 3. Floating WhatsApp Quick Connect Button
 - Added a floating WhatsApp button in the bottom-right corner of both `index.html` and `contact.html`.
-  - **Direct Number**: `+91 86509 21200` (`https://wa.me/918650921200`)
+  - **Direct Number**: `+91 73007 83796` (`https://wa.me/917300783796`)
   - **Pre-filled Message**: *"Hi GESP team, I would like to know more about U.S. boarding school admissions and athletic guidance."*
   - **Responsive Design**: Displays pill button with text on desktop; shifts to circular icon on mobile without obstructing screen content.
 
