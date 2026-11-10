@@ -4,12 +4,12 @@
 - **Single Unified Strategy Session Form**: Standardized the form across both the Homepage popup modal (`index.html`) and the dedicated Contact page (`contact.html`).
   - **Role Selection**: `Parent / Guardian` vs `Student / Scholar`
   - **Help Topics**: Multi-select pills (*Finding the Right School*, *Student-Athlete Opportunities*, *Financial Aid / Scholarship*, *Applying to Schools*, *Not Sure Yet*, *Other*)
-  - **Contact Information**: Full Name, Email Address, Phone Number
+  - **Contact Information**: Full Name, Email Address, Phone Number, City
   - **Target Entry Year**: Dropdown options (*Spring 2027 Intake*, *Fall 2027 Intake*, *Post-Graduate (PG) Athletic Year*, *General Exploration*)
-- **Live Google Sheets Webhook Sync**: Created `study-abroad/lead-sync.js` and connected both forms directly to Google Sheets via Google Apps Script Web App (`https://script.google.com/macros/s/AKfycbydEmG6YismMMIGzEWHHHmSLqIuncqACxm-Y7BVMhzL5Ik3a6rcFOslcgfRG7hFw8eUHw/exec`). Submissions automatically record:
+- **Live Google Sheets Webhook Sync**: Created `study-abroad/lead-sync.js` and connected both forms directly to Google Sheets via Google Apps Script Web App (`https://script.google.com/macros/s/AKfycbzsBYzicgPphMbZhFIdNgDoM2Z4_2KU4fxHXTIP4fgwXWRf_t2YUhvRGuUQ4dHM-gZxbQ/exec`). Submissions automatically record:
   - Timestamp
   - Source (`"Homepage Modal"` vs `"Contact Page"`)
-  - Role, Help Topics, Name, Email, Phone, and Target Intake Year
+  - Role, Help Topics, Name, Email, Phone, City, and Target Intake Year
 
 ---
 

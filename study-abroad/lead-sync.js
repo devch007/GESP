@@ -4,7 +4,7 @@
  */
 
 // Google Apps Script Web App URL for Google Sheet Lead Sync
-const GESP_GOOGLE_SHEET_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbydEmG6YismMMIGzEWHHHmSLqIuncqACxm-Y7BVMhzL5Ik3a6rcFOslcgfRG7hFw8eUHw/exec';
+const GESP_GOOGLE_SHEET_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbzsBYzicgPphMbZhFIdNgDoM2Z4_2KU4fxHXTIP4fgwXWRf_t2YUhvRGuUQ4dHM-gZxbQ/exec';
 
 async function submitGespLead(formData, sourceName) {
   const payload = {
@@ -15,6 +15,7 @@ async function submitGespLead(formData, sourceName) {
     name: formData.get('name') || '',
     email: formData.get('email') || '',
     phone: formData.get('phone') || '',
+    city: formData.get('city') || '',
     intake: formData.get('intake') || ''
   };
 
