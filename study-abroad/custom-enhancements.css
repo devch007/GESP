@@ -1838,6 +1838,75 @@ body {
   box-shadow: 0 0 0 3px rgba(250, 185, 0, 0.35);
 }
 
+/* GDPR / Data Consent Checkbox */
+.gesp-gdpr-group {
+  margin-top: 2px;
+}
+
+.gesp-gdpr-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 12px 14px;
+  background: #F8FAFC;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.gesp-gdpr-label:hover {
+  border-color: #CBD5E1;
+  background: #F1F5F9;
+}
+
+.gesp-gdpr-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.gesp-gdpr-box {
+  width: 19px;
+  height: 19px;
+  border-radius: 6px;
+  border: 1.8px solid #94A3B8;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: transparent;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gesp-gdpr-checkbox:checked + .gesp-gdpr-box {
+  background: #0D2153;
+  border-color: #0D2153;
+  color: #FAB900;
+  box-shadow: 0 2px 6px rgba(13, 33, 83, 0.25);
+}
+
+.gesp-gdpr-checkbox:focus-visible + .gesp-gdpr-box {
+  box-shadow: 0 0 0 3px rgba(250, 185, 0, 0.35);
+}
+
+.gesp-gdpr-label:has(.gesp-gdpr-checkbox:checked) {
+  border-color: rgba(13, 33, 83, 0.28);
+  background: rgba(13, 33, 83, 0.025);
+}
+
+.gesp-gdpr-text {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #475569;
+  font-weight: 500;
+}
+
 .gesp-form-submit-btn {
   display: flex;
   align-items: center;
