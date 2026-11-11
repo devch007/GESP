@@ -3169,3 +3169,182 @@ body {
     right: -15px;
   }
 }
+
+/* ==========================================================================
+   Meet Our Leadership & Advisors Team Section
+   ========================================================================== */
+.gesp-team-section {
+  position: relative;
+  padding: 100px 0 115px;
+  background: linear-gradient(180deg, #FDFBF7 0%, #F7F4EC 100%);
+  border-top: 1px solid #ECE7DE;
+  scroll-margin-top: 84px;
+}
+
+.gesp-team-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.gesp-team-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 58px;
+}
+
+.gesp-team-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  background: rgba(250, 185, 0, 0.14);
+  border: 1px solid rgba(250, 185, 0, 0.4);
+  color: #0D2153;
+  font-size: 11.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.gesp-team-title {
+  font-family: var(--font-display) !important;
+  font-size: clamp(28px, 3.2vw, 42px) !important;
+  font-weight: 700 !important;
+  color: #0D2153 !important;
+  line-height: 1.2 !important;
+  margin: 0 0 16px 0 !important;
+  letter-spacing: -0.015em !important;
+}
+
+.gesp-team-title span {
+  background: var(--gesp-gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gesp-team-subtitle {
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.65;
+  color: #556277;
+  margin: 0 auto;
+}
+
+.gesp-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.gesp-team-card {
+  background: #FFFFFF;
+  border: 1px solid #E8E3D9;
+  border-radius: 24px;
+  padding: 18px 18px 28px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(13, 33, 83, 0.04);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gesp-team-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(250, 185, 0, 0.65);
+  box-shadow: 0 22px 48px rgba(13, 33, 83, 0.09);
+}
+
+.gesp-team-photo-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFF7DC 45%, #FCD364 100%);
+  margin-bottom: 22px;
+}
+
+.gesp-team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gesp-team-card:hover .gesp-team-photo {
+  transform: scale(1.03);
+}
+
+.gesp-team-body {
+  padding: 0 8px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.gesp-team-name {
+  font-family: var(--font-display) !important;
+  font-size: 21px !important;
+  font-weight: 700 !important;
+  color: #0D2153 !important;
+  line-height: 1.25 !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.gesp-team-role {
+  font-size: 14px;
+  font-weight: 700;
+  color: #9A7211;
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+
+.gesp-team-subrole {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #64748B;
+  line-height: 1.45;
+  margin-bottom: 12px;
+}
+
+.gesp-team-role:not(:has(+ .gesp-team-subrole)) {
+  margin-bottom: 12px;
+}
+
+.gesp-team-bio {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #475569;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .gesp-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gesp-team-section {
+    padding: 65px 0 75px;
+  }
+  .gesp-team-container {
+    padding: 0 18px;
+  }
+  .gesp-team-header {
+    margin-bottom: 36px;
+  }
+  .gesp-team-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .gesp-team-card {
+    padding: 14px 14px 24px;
+    border-radius: 20px;
+  }
+}
